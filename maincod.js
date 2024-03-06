@@ -21,3 +21,4 @@ if(placeholder){
 				contents.classList.add("tabulator-placeholder-contents");
 				contents.innerHTML = placeholder;
 				
+//yes
