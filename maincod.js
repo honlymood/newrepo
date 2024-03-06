@@ -22,3 +22,11 @@ if(placeholder){
 				contents.innerHTML = placeholder;
 				
 //yes
+if(this.scrollLeft != left){
+				this.scrollLeft = left;
+				
+				this.dispatch("scroll-horizontal", left, leftDir);
+				this.dispatchExternal("scrollHorizontal", left, leftDir);
+				
+				this._positionPlaceholder();
+			}
